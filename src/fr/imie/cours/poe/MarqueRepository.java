@@ -1,12 +1,14 @@
 package fr.imie.cours.poe;
 
+import java.util.*;
+
 public interface MarqueRepository {
 
-    void insert(Marque marque);
-    void update(Marque marque);
-    void deleteById(int id);
-    Marque findById(int id);
-    List<Marque> findAll();
-    List<Marque> findByName(String name);
+    public abstract void insert(Marque marque);
+    public abstract void update(Marque marque);
+    public abstract void deleteById(int id);
+    public abstract Marque findById(int id);
+    public abstract List<Marque> findAll();
+    public abstract List<Marque> findByName(String name);
 
 }
