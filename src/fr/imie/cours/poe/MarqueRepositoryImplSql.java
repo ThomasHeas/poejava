@@ -21,12 +21,12 @@ public class MarqueRepositoryImplSql implements MarqueRepository {
         // TODO DELETE
     }
 
-    public List<Marque> findAll() {
+    public Marque findById(int id) {
         // TODO SELECT
         return null;
     }
 
-    public Marque findById(int id) {
+    public List<Marque> findAll() {
         // TODO SELECT
         return null;
     }

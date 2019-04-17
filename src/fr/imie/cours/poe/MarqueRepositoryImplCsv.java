@@ -17,14 +17,14 @@ public class MarqueRepositoryImplCsv implements MarqueRepository {
         // PrintWriter
     }
 
-    public List<Marque> findAll() {
-        // TODO lire l'intégralité du fichier
+    public Marque findById(int id) {
+        // TODO lire fichier
         // BufferedReader
         return null;
     }
 
-    public Marque findById(int id) {
-        // TODO lire fichier
+    public List<Marque> findAll() {
+        // TODO lire l'intégralité du fichier
         // BufferedReader
         return null;
     }

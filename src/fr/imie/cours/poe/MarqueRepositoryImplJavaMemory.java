@@ -21,12 +21,12 @@ public class MarqueRepositoryImplJavaMemory implements MarqueRepository {
         marques.remove(id);
     }
 
-    public List<Marque> findAll() {
-        return new ArrayList(marques.values());
-    }
-
     public Marque findById(int id) {
         return marques.get(id);
+    }
+
+    public List<Marque> findAll() {
+        return new ArrayList(marques.values());
     }
 
     public List<Marque> findByName(String name) {
