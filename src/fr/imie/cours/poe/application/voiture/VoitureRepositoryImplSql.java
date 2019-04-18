@@ -1,8 +1,7 @@
-package fr.imie.cours.poe.voiture;
+package fr.imie.cours.poe.application.voiture;
 
-import fr.imie.cours.poe.Repository;
+import fr.imie.cours.poe.application.Repository;
 
-import java.sql.Connection;
 import java.util.*;
 
 public class VoitureRepositoryImplSql extends Repository implements VoitureRepository {
@@ -32,11 +31,6 @@ public class VoitureRepositoryImplSql extends Repository implements VoitureRepos
     }
 
     public List<Voiture> findAll() {
-        // TODO SELECT
-        return null;
-    }
-
-    public List<Voiture> findByName(String name) {
         // TODO SELECT
         return null;
     }

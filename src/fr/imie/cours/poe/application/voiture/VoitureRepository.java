@@ -1,6 +1,5 @@
-package fr.imie.cours.poe.voiture;
+package fr.imie.cours.poe.application.voiture;
 
-import java.sql.Connection;
 import java.util.List;
 
 public interface VoitureRepository {
@@ -10,6 +9,5 @@ public interface VoitureRepository {
     public abstract void deleteById(int id);
     public abstract Voiture findById(int id);
     public abstract List<Voiture> findAll();
-    public abstract List<Voiture> findByName(String name);
 
 }

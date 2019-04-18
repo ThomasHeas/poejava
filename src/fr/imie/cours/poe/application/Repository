@@ -1,4 +1,4 @@
-package fr.imie.cours.poe;
+package fr.imie.cours.poe.application;
 
 import java.sql.Connection;
 

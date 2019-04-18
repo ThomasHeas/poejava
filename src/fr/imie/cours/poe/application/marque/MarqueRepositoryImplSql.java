@@ -1,8 +1,7 @@
-package fr.imie.cours.poe.marque;
+package fr.imie.cours.poe.application.marque;
 
-import fr.imie.cours.poe.Repository;
+import fr.imie.cours.poe.application.Repository;
 
-import java.sql.Connection;
 import java.util.*;
 
 public class MarqueRepositoryImplSql extends Repository implements MarqueRepository {

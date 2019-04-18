@@ -1,4 +1,4 @@
-package fr.imie.cours.poe.voiture;
+package fr.imie.cours.poe.application.voiture;
 
 import java.util.*;
 
@@ -27,10 +27,6 @@ public class VoitureRepositoryImplJavaMemory implements VoitureRepository {
 
     public List<Voiture> findAll() {
         return new ArrayList(marques.values());
-    }
-
-    public List<Voiture> findByName(String name) {
-        return marques.values().stream().filter(marque -> marque.name = name);
     }
 
 }

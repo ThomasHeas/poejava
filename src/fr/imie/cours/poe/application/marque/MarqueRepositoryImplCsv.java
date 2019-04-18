@@ -1,15 +1,15 @@
-package fr.imie.cours.poe.voiture;
+package fr.imie.cours.poe.application.marque;
 
 import java.util.*;
 
-public class VoitureRepositoryImplCsv implements VoitureRepository {
+public class MarqueRepositoryImplCsv implements MarqueRepository {
 
-    public void insert(Voiture marque) {
+    public void insert(Marque marque) {
         // TODO écrire dans le fichier
         // PrintWriter
     }
 
-    public void update(Voiture marque) {
+    public void update(Marque marque) {
         // TODO écrire dans le fichier
         // PrintWriter
     }
@@ -19,19 +19,19 @@ public class VoitureRepositoryImplCsv implements VoitureRepository {
         // PrintWriter
     }
 
-    public Voiture findById(int id) {
+    public Marque findById(int id) {
         // TODO lire fichier
         // BufferedReader
         return null;
     }
 
-    public List<Voiture> findAll() {
+    public List<Marque> findAll() {
         // TODO lire l'intégralité du fichier
         // BufferedReader
         return null;
     }
 
-    public List<Voiture> findByName(String name) {
+    public List<Marque> findByName(String name) {
         // TODO lire fichier
         // BufferedReader
         return null;

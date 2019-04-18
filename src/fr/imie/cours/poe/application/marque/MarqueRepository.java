@@ -1,4 +1,4 @@
-package fr.imie.cours.poe.marque;
+package fr.imie.cours.poe.application.marque;
 
 import java.util.*;
 
