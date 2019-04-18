@@ -1,0 +1,12 @@
+package fr.imie.cours.poe;
+
+import java.sql.Connection;
+
+public abstract class Repository {
+
+    protected Connection getConnection() {
+        // TODO DriverManager.getConnection();
+        return null;
+    }
+
+}

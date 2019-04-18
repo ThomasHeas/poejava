@@ -1,6 +1,11 @@
-package fr.imie.cours.poe;
+package fr.imie.cours.poe.marque;
 
-public class MarqueRepositoryImplSql implements MarqueRepository {
+import fr.imie.cours.poe.Repository;
+
+import java.sql.Connection;
+import java.util.*;
+
+public class MarqueRepositoryImplSql extends Repository implements MarqueRepository {
 
     private static final String INSERT = "INSERT INTO marque (name) VALUES (?)";
     private static final String UPDATE = "UPDATE      marque SET name = ? WHERE id = ?";
@@ -10,6 +15,7 @@ public class MarqueRepositoryImplSql implements MarqueRepository {
     private static final String FIND_BY_NAME = "SELECT id, name FROM marque WHERE name = ?";
 
     public void insert(Marque marque) {
+        getConnection();
         // TODO INSERT
     }
 
