@@ -1,6 +1,6 @@
 package fr.imie.cours.poe.machine;
 
-public class MachineLavage implements Lavage {
+public class MachineLavage extends Machine implements Lavage {
 
     public void lavage() {
         // TODO le code du lavage

@@ -1,6 +1,6 @@
 package fr.imie.cours.poe.machine;
 
-public class MachineSechage implements Sechage {
+public class MachineSechage extends Machine implements Sechage {
 
     public void sechage() {
         // TODO le code du sechage
