@@ -49,12 +49,14 @@ public class GameOfLifeUI extends JFrame {
         for (int row = border; row < width - border; row++) {
             // ... colonne par colonne
             for (int col = border; col < height - border; col++) {
-                if (Math.random() < .10)
+                if (Math.random() < .50)
                     buffer.fillRect(row, col, 1, 1);
             }
         }
         // prendre le buffer et dessiner l'image dans la fenetre
         gr.drawImage(this.buffer, getInsets().left, getInsets().top, null);
+        // dessiner la génération suivante
+        repaint();
     }
 
 }
