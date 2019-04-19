@@ -5,9 +5,7 @@ public class Feutre extends MoyenEcriture {
     private Bouchon b;
 
     public void boucher(Bouchon b) {
-        if (this.b == null) {
-            this.b = b;
-        }
+        this.b = b;
     }
 
     public Bouchon deboucher() {
