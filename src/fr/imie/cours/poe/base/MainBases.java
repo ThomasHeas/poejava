@@ -1,13 +1,13 @@
 package fr.imie.cours.poe.base;
 
-import java.lang.reflect.Array;
 import java.util.*;
 
 public class MainBases {
 
     public static void main(String[] args) {
 
-        // structure à taille fixe
+        // structure à taille fixe : tableaux
+
         String[] saisons = { "printemps", "été", "automne", "hiver" };
         System.out.println(saisons.length);
 
@@ -27,16 +27,21 @@ public class MainBases {
             System.out.println(saison);
         }
 
-        // structure à taille dynamique
+        // structure à taille dynamique : List, ArrayList
+
+        // JAVA VERSION <= 4
+
+        // liste neutre contenant du texte
         List liste4 = new ArrayList();
         liste4.add("Jean");
         liste4.add("Louise");
         liste4.add("Robert");
         for (int ii = 0; ii < liste4.size(); ii++) {
-            String saison = (String) liste4.get(ii);
-            System.out.println(ii + " : " + saison);
+            String prenom = (String) liste4.get(ii);
+            System.out.println(ii + " : " + prenom);
         }
 
+        // liste neutre contenant des nombres
         List liste4bis = new ArrayList();
         liste4bis.add(5);
         liste4bis.add(4);
@@ -68,7 +73,7 @@ public class MainBases {
             System.out.println(ii + " : " + nombre);
         }
 
-        // DEPUIS JAVA 1.5
+        // DEPUIS JAVA >= 1.5
 
         List<Integer> liste5 = new ArrayList<Integer>();
         liste5.add(5);
@@ -85,6 +90,19 @@ public class MainBases {
         for (String texte : liste5bis) {
             System.out.println(texte);
         }
+
+        // liste de notes et moyenne des notes
+        List<Float> notes = new ArrayList<Float>();
+        notes.add(10f);
+        notes.add(11f);
+        notes.add(16f);
+        float somme = 0;
+        for (Float note : notes) {
+            somme += note;
+        }
+        float moyenne = somme / notes.size();
+        System.out.println("moyenne : " + moyenne);
+
     }
 
 }
